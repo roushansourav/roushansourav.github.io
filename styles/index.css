@@ -1,0 +1,121 @@
+
+.parallax {
+    /* The image used */
+    background-color: teal;
+    height: 500px;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sidenav{
+    display:none;
+  }
+  
+  #header{
+      width:100%;
+      margin-top:10px;
+      text-align:center;
+
+  }
+  .navbar-large{
+      text-align: center;
+
+  }
+  .navbar-link{
+    text-align: center;
+    display:inline-block;
+    border:none;
+    padding:5px 10px;
+    text-decoration: none;
+    background-color: teal;
+    color:white;
+    font-family: 'Yeon Sung', cursive;
+    font-size:24px;
+  }
+  .navbar-link:active{
+      border-bottom: 2px dotted whitesmoke;
+  }
+  .navbar-link:hover{
+      border-bottom: 2px dotted whitesmoke;
+  }
+  .hidden-btn{
+      display:none;
+  }
+  #brand{
+      display:none;
+  }
+ .modal{
+     display:none;
+ }
+ .modal-content{
+     display: none;
+ }
+  /* The Modal (background) */
+
+  @media all and (max-width: 900px) {
+    .modal {
+        display: none; /* Hidden by default */
+        position: relative; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 300px; /* Full width */
+        height: 100%; /* Full height */
+        overflow:none;
+        background-color:dark salmon;
+        padding:0px;
+      }
+    .navbar-large{
+        display:none;
+    }
+    .res-btn{
+        display:block;
+        float:right;
+        margin-right:20px;
+        background-color: transparent;
+        outline:none;
+        margin:none;
+    }
+    #brand{
+        display:block;
+        position:fixed;
+        z-index:2;
+        font-size:24px;
+        color:white;
+        top:10px;
+        left:15px;
+        font-family: 'Yeon Sung', cursive;
+    }
+    
+    .responsive{
+        width:200px;
+    }
+    .responsive>.navbar-link{
+        display:block;
+        width:100px;
+    }
+    
+      
+      /* Modal Content/Box */
+      .modal-content {
+        display: block;
+        float:left;
+        background-color:transparent;
+        margin: 15% auto; /* 15% from the top and centered */
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* The Close Button */
+      .close {
+        float:right;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+  }
